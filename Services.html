@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+    <style>
+    .service-card {
+      transition: transform 0.2s ease-in-out;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .icon-img {
+      height: 50px;
+      margin-bottom: 15px;
+    }
+    .new-badge {
+      font-size: 0.7rem;
+      background: #28a745;
+      color: white;
+      padding: 2px 6px;
+      border-radius: 5px;
+      margin-left: 6px;
+    }
+    .testimonial-card {
+      background: linear-gradient(145deg, #1c1c1c, #0d0d0d);
+      border: none;
+      border-radius: 1rem;
+      padding: 2rem;
+      color: #fff;
+      box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
+    }
+
+    .testimonial-card img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .testimonial-card .name {
+      font-weight: bold;
+      color: #ffd700;
+    }
+  </style>
+</head>
+<body class="bg-danger">
+  <!-- <"navbar"> -->
+    <nav class="navbar navbar-expand-lg bg-info fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-dark" href="#">            
+          <img src="img/car-dealer.png" height="50" width="50"> 
+          <span>Top Car Showroom</span>
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="About us.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="Services.html">Servives</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="Contact Us.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="Faq.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#login">
+            <i class="bi bi-person fs-4"></i>
+          </a>
+          
+        </div>
+      </nav>
+
+      <!-- <"login Sction"> -->
+<div class="modal fade" id="login">
+    <div class="modal-dialog ">
+        <div class="modal-content bg-info border border-1 border-dark">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-danger">Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="m-2">
+                  <label class="form-label text-dark">UserName</label>
+                  <input type="email" placeholder="@ckjdgs.com" class="form-control">
+                </div>
+                <div class="m-2">
+                  <label class="form-label text-dark">Password</label>
+                  <input type="password" placeholder="dxfjhhgjh" class="form-control">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+              <button class="btn btn-danger">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-5" style="margin-top: 50px;">
+    <h2 class="fw-bold  text-info">Lamborghini Car's Services in Mumbai </h2>
+    <p class="fw-bold mb-5 text-warning">Get discounted and professional periodic car service, car repair, wheel care services, cashless insurance claim and much more in Aamchi Mumbai.</p>
+    <div class="row g-4">
+        <!-- Card Template -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card service-card text-center p-3">
+                <img src="Services/schedule.png" alt="Periodic Service" class="icon-img mx-auto">
+                <h6 class="mt-2">Periodic Services</h6>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card service-card text-center p-3">
+                <img src="Services/car repair.png" alt="AC Service" class="icon-img mx-auto">
+                <h6 class="mt-2">Car Repair</h6>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card service-card text-center p-3">
+                <img src="Services/car-battery.png" alt="Batteries" class="icon-img mx-auto">
+                <h6 class="mt-2">Batteries</h6>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card service-card text-center p-3">
+                <img src="Services/tires.png" alt="Tyres" class="icon-img mx-auto">
+                <h6 class="mt-2">Tyres & Wheel Care</h6>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card service-card text-center p-3">
+                <img src="Services/car paint.png" alt="Painting" class="icon-img mx-auto">
+                <h6 class="mt-2">Car Painting</h6>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card service-card text-center p-3">
+                <img src="Services/detailing.png" alt="Detailing" class="icon-img mx-auto">
+                <h6 class="mt-2">Detailing Services</h6>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card service-card text-center p-3">
+                <img src="Services/car-service.png" alt="Spa" class="icon-img mx-auto">
+                <h6 class="mt-2">Car Cleaning</h6>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card service-card text-center p-3">
+                <img src="Services/checklist.png" alt="Insurance" class="icon-img mx-auto">
+                <h6 class="mt-2">Car Inspections</h6>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-center text-info">
+    <h1 class="section-title">What Our Clients Say</h1>
+    <p class="text-center text-warning">Unleashing dreams behind the wheel of Lamborghini</p>
+</div>
+<div class="container py-5">
+    <div class="text-center">
+      <h1 class="section-title text-info">What Our Clients Say</h1>
+      <p class="text-warning">Unleashing dreams behind the wheel of Lamborghini</p>
+    </div>
+
+    <div class="row g-4 mt-4">
+      <!-- Testimonial 1 -->
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://i.pravatar.cc/60?img=11" alt="client" class="me-3" />
+            <div>
+              <div class="name">Abhay Singh</div>
+              <small class="text-info">Business Owner, Delhi</small>
+            </div>
+          </div>
+          <p>“The Lamborghini Urus offers the perfect balance of power and practicality. It's more than an SUV—it's a statement on wheels.”</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://i.pravatar.cc/60?img=22" alt="client" class="me-3" />
+            <div>
+              <div class="name">Nitish Kumar</div>
+              <small class="text-info">Tech Executive, Mumbai</small>
+            </div>
+          </div>
+          <p>“This car is raw power wrapped in luxury. The Urus is a beast that roars and comforts at the same time. Totally worth it!”</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://i.pravatar.cc/60?img=33" alt="client" class="me-3" />
+            <div>
+              <div class="name">Mohit</div>
+              <small class="text-info">Automotive Enthusiast, Bangalore</small>
+            </div>
+          </div>
+          <p>“The aggressive tuning on the V8 Urus is addictive. It's tuned for thrill seekers like me. Every ride is a pulse-raiser.”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

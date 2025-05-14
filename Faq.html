@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <body class="bg-danger">
+        <!-- <"navbar"> -->
+          <nav class="navbar navbar-expand-lg bg-info fixed-top">
+              <div class="container-fluid">
+                <a class="navbar-brand text-dark" href="#">            
+                <img src="img/car-dealer.png" height="50" width="50"> 
+                <span>Top Car Showroom</span>
+              </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="About us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="Services.html">Servives</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="Contact Us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="#">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+                <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#login">
+                  <i class="bi bi-person fs-4"></i>
+                </a>
+                
+              </div>
+            </nav>
+      
+            <!-- <"login Sction"> -->
+      <div class="modal fade" id="login">
+          <div class="modal-dialog ">
+              <div class="modal-content bg-info border border-1 border-dark">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-danger">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+      
+                  <div class="modal-body">
+                      <div class="m-2">
+                        <label class="form-label text-dark">UserName</label>
+                        <input type="email" placeholder="@ckjdgs.com" class="form-control">
+                      </div>
+                      <div class="m-2">
+                        <label class="form-label text-dark">Password</label>
+                        <input type="password" placeholder="dxfjhhgjh" class="form-control">
+                      </div>
+                  </div>
+      
+                  <div class="modal-footer">
+                    <button class="btn btn-danger">Submit</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- FAQ Section-->
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6 mb-4 text-center" style="margin-top: 100px;">
+            <img src="img/LOGO.jpg" class="img-fluid" height="500" width="500">
+          </div>
+        <div class="col-md-6 mb-4" style="margin-top: 100px;">
+            <h2 class="fw-bold text-info">FAQ</h2>
+            <p class="mb-1 text-warning">Frequently Asked Questions</p>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button text-danger " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" >
+                    What is the return policy?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" >
+                  <div class="accordion-body text-info">
+                    Our return policy allows you to return items within 30 days of purchase for a full refund.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" >
+                    How can I track my order?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" >
+                  <div class="accordion-body text-info">
+                    You can track your order using the tracking link provided in your confirmation email.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" >
+                    Do you offer international shipping?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" >
+                  <div class="accordion-body text-info">
+                    Yes, we offer international shipping to select countries. Please check our shipping policy for more details.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" >
+                    How can I contact customer support?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" >
+                  <div class="accordion-body text-info">
+                    You can contact our customer support team via email at lamborghiniauto@gmail.com.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" >
+                    What payment methods do you accept?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" >
+                  <div class="accordion-body text-info">
+                    We accept all major credit cards, PayPal, and bank transfers.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" >
+                    Can I change my order after it has been placed?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" >
+                  <div class="accordion-body text-info">
+                    Yes, you can change your order within 24 hours of placing it. Please contact our customer support for assistance.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

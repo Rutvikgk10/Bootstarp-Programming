@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+    <style>
+        .darken-image {
+           filter: brightness(50%);
+        }
+        .center_text{
+            top: 50%;
+            transform: translateY(-50%);
+        }
+     </style>
+</head>
+<body class="bg-danger">
+    <!-- <"navbar"> -->
+      <nav class="navbar navbar-expand-lg bg-info fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand text-dark" href="#">            
+            <img src="img/car-dealer.png" height="50" width="50"> 
+            <span>Top Car Showroom</span>
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="Services.html">Servives</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="Contact Us.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="Faq.html">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <a class="nav-link border bg-warning-subtle rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#login">
+              <i class="bi bi-person fs-4"></i>
+            </a>
+            
+          </div>
+        </nav>
+  
+        <!-- <"login Sction"> -->
+  <div class="modal fade" id="login">
+      <div class="modal-dialog ">
+          <div class="modal-content bg-info border border-1 border-dark">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-danger">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+  
+              <div class="modal-body">
+                  <div class="m-2">
+                    <label class="form-label text-dark">UserName</label>
+                    <input type="email" placeholder="@ckjdgs.com" class="form-control">
+                  </div>
+                  <div class="m-2">
+                    <label class="form-label text-dark">Password</label>
+                    <input type="password" placeholder="dxfjhhgjh" class="form-control">
+                  </div>
+              </div>
+  
+              <div class="modal-footer">
+                <button class="btn btn-danger">Submit</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="container">
+    <h1 class="fs-1 text-info text-center" style="margin-top: 100px;">Top Car<span class="text-dark"> <i class="bi bi-car-front"></i></span> </i>Showroom</span></h1>
+    <div class="row">
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/TERZO MILLENNIO.jpg" class="w-100 darken-image" height="400">
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h1>Lamborghini TERZO MILLENNIO</h1>
+                    <p class="opacity-75"></p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/URUS.jpg" class="w-100 darken-image" height="400">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Lamborghini URUS</h1>
+                    <p></p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Temerario.jpeg" class="w-100 darken-image" height="400">
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    <h1>Lamborghini Temerario</h1>
+                    <p></p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</div>
+</body>
+</html>
